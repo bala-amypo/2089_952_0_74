@@ -1,9 +1,8 @@
 package com.example.demo.service;
-import org.springframework.stereotype.Service;
-
 import com.example.demo.entity.Student;
-
-@Service
-public interface StudentService {
-    Student postStudent(Student s);
+import java.util.*;
+public interface StudentService{
+    Student poststudent(Student st);
+    List<Student> getAllStudents();
+    Optional<Student> getById(Long id);
 }
